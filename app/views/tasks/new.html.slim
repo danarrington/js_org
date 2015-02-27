@@ -1,0 +1,11 @@
+=form_for @task do |f|
+  p
+    =f.label :name
+    =f.text_field :name
+  p
+    =f.label :recurring
+    =f.check_box :recurring
+  p.every-container style='display:none'
+    =f.label :every
+    =f.text_field :every
+  =f.submit
