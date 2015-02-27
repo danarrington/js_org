@@ -1,4 +1,5 @@
-var FormUpdater = (function(){
+stashModules = {};
+stashModules.FormUpdater = (function(){
   var m = {};
 
   m.announce = function() {

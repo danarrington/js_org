@@ -6,7 +6,7 @@ var TasksController = Paloma.controller('Tasks');
 //Executes when Rails User#new is executed.
 TasksController.prototype.new = function(){
    console.log('New action' );
-   FormUpdater.toggleEvery('#task_recurring', '.every-container');
+   stashModules.FormUpdater.toggleEvery('#task_recurring', '.every-container');
 };
 
 TasksController.prototype.index = function(){
